@@ -1,0 +1,8 @@
+
+<div *ngIf="curr_idx<4">
+  <app-page [page_precent]="curr_idx*25" [page_items]="pages[curr_idx]" [doMinusScore]="doMinusScore" [rightAns]="right_ones[curr_idx]" [doNextPage]="doNextPage" ></app-page>
+</div>
+
+<div *ngIf="curr_idx==4">
+  <app-quiz-result [quiz_score]="score" ></app-quiz-result>
+</div>

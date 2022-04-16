@@ -1,0 +1,8 @@
+<app-progress-bar  [precent]="page_precent"></app-progress-bar>
+
+<div *ngFor="let item_data of page_items">
+  <app-item [data2]="item_data" [rightAns]="rightAns" [tacklePage]="tacklePage"></app-item>
+</div>
+
+
+<button type="button" [disabled]="disabled" (click)="doNextPage()" >Next</button>
